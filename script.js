@@ -67,3 +67,33 @@ fucntion genLastName (lastName){
 function genSuffix(favoriteAnimal){
 return `of $(favoriteAnimal) clan.`
 }
+
+//master name building function
+function genFullName(){
+//get users inputs from html elements
+const firstName =document.getElementById('firstName').value.trim()
+const lastName =document.getElementById('firstName').value.trim()
+const roadType =document.getElementById('firstName').value
+const favoriteColor =document.getElementById('firstName').value.trim()
+const favoriteAnimal =document.getElementById('firstName').value.trim()
+
+//run name generating functions and store them in new varibales
+const prefix = genPrefix(firstName)
+const newFirstName = getFirstName(firstName)
+const middleName = getMiddleName(roadType, favoriteColor)
+const newLastname = getLastName(lastName)
+//capitalize name variables when needed
+const capitalizedPrefix = capitalize(prefix)
+const capitalizedFirstName = capitalize(newFirstName)
+const capitalizedMiddleName = capitalize(middleName)
+const capitalizedLastName = capitalize(newLastname)
+//combine all of the name variables into a full new name
+
+//display new name
+
+}
+
+//capitalize
+function capitalize(input){
+    return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase()
+}
