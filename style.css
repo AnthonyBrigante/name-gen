@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #ff007f, #ff6600, #3399ff); /* Gradient from pink to orange to blue */
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background to contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #FFD700; /* Gold */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Form Elements */
+input[type="text"], select {
+    background-color: #444;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Button */
+#button5 {
+    background-color: #FF4500; /* Orange Red */
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#button5:hover {
+    background-color: #FF6347; /* Tomato */
+}
+
+/* Result Section */
+.result {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FFD700;
+}
+
+/* Footer (Optional) */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .form-label, input[type="text"], select {
+        font-size: 1rem;
+    }
+}

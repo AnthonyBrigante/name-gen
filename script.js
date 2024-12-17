@@ -1,9 +1,9 @@
 //generate prefix
 function genPrefix(firstName) {
     if (firstName.length > 5) {
-        return 'The Great'
+        return 'The spectacular'
     } else {
-        return 'master'
+        return 'the amazing'
     }
 
 }
@@ -12,45 +12,45 @@ function genFirstName(firstName) {
     if (firstLetter === 'a') {
         return 'Bum'
     } else if (firstLetter === 'b') {
-        return 'Pablo'
+        return 'mMzmaro'
     } else if (firstLetter === 'c') {
-        return 'Frank'
+        return 'Superdude'
     } else if (firstLetter === 'd') {
         return 'Requese'
     } else if (firstLetter === 'e') {
-        return 'Demarcus'
+        return 'Bizbo'
     } else if (firstLetter === 'f') {
         return 'Jugaloo'
     } else if (firstLetter === 'g') {
-        return 'Panda'
+        return 'Death tyrant'
     } else if (firstLetter === 'h') {
-        return 'Carrot'
+        return 'Sparticus'
     } else if (firstLetter === 'i') {
-        return 'Dirt'
+        return 'Dirt punching'
     } else if (firstLetter === 'j') {
-        return 'Sam'
+        return 'Bachanator'
     } else if (firstLetter === 'k') {
-        return 'Jeff'
+        return 'Evil eye'
     } else if (firstLetter === 'l') {
-        return 'Hornface'
+        return 'sam'
     } else if (firstLetter === 'm') {
         return 'Mommylover'
     } else if (firstLetter === 'n') {
         return 'orinnix'
     } else if (firstLetter === 'o') {
-        return 'Pablo'
+        return 'Brick fist'
     } else if (firstLetter === 'p') {
-        return 'Pablo'
+        return 'Iron gut'
     } else if (firstLetter === 'q') {
-        return 'Pablo'
+        return 'Stretcher'
     } else if (firstLetter === 'r') {
-        return 'Pablo'
+        return 'lawnmower'
     } else if (firstLetter === 's') {
-        return 'Pablo'
+        return 'Hornface'
     } else if (firstLetter === 't') {
-        return 'Pablo'
+        return 'Stoneback'
     } else if (firstLetter === 'u') {
-        return 'Pablo'
+        return 'Knifefingers'
     } else if (firstLetter === 'v') {
         return 'Pablo'
     } else if (firstLetter === 'w') {
@@ -71,9 +71,9 @@ function genFirstName(firstName) {
 
 function genMiddleName(roadType, favoriteColor) {
     if (roadType === 'road') {
-        return `${favoriteColor}ridge`; // Example: Blueridge
+        return `${favoriteColor}fighter`; // Example: Blueridge
     } else if (roadType === 'street') {
-        return `${favoriteColor}son`; // Example: Bluedeson
+        return ` master of ${favoriteColor}`; // Example: Bluedeson
     } else {
         return `${favoriteColor}stone`; // Example: Bluestone
     }
@@ -84,16 +84,16 @@ function genMiddleName(roadType, favoriteColor) {
 function genLastName(lastName) {
     const lastLetter = lastName.charAt(lastName.length - 1)
     if (lastLetter === 'a') {
-        return 'Storm'
+        return 'Stormmaker'
     } else if (lastLetter === 'b') {
         return 'Von Evil'
     }
     else if (lastLetter === 'c') {
         return 'Dickerson'
     } else if (lastLetter === 'd') {
-        return 'Ivan'
-    } else if (lastLetter === 'e') {
         return 'Johnson'
+    } else if (lastLetter === 'e') {
+        return 'Battlemaster'
     } else if (lastLetter === 'f') {
         return 'Turducken'
     } else if (lastLetter === 'g') {
@@ -141,7 +141,7 @@ function genLastName(lastName) {
 
 //gen Suffix
 function genSuffix(favoriteAnimal) {
-    return `of ${favoriteAnimal} clan.`
+    return `,of the ${favoriteAnimal} League.`
 }
 
 //master name building function
