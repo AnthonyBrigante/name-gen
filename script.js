@@ -12,7 +12,7 @@ function genFirstName(firstName) {
     if (firstLetter === 'a') {
         return 'Bum'
     } else if (firstLetter === 'b') {
-        return 'mMzmaro'
+        return 'mezmaro'
     } else if (firstLetter === 'c') {
         return 'Superdude'
     } else if (firstLetter === 'd') {
@@ -52,15 +52,13 @@ function genFirstName(firstName) {
     } else if (firstLetter === 'u') {
         return 'Knifefingers'
     } else if (firstLetter === 'v') {
-        return 'Pablo'
+        return 'killgore'
     } else if (firstLetter === 'w') {
-        return 'Pablo'
+        return 'destroyer'
     } else if (firstLetter === 'x') {
-        return 'Pablo'
-    } else if (firstLetter === 'y') {
-        return 'Pablo'
-    } else if (firstLetter === 'z') {
-        return 'Pablo'
+        return 'Bigboi'
+    } if (firstLetter === 'y' || firstLetter === 'z') {
+        return 'Pablo';
     }
 
 
@@ -97,7 +95,7 @@ function genLastName(lastName) {
     } else if (lastLetter === 'f') {
         return 'Turducken'
     } else if (lastLetter === 'g') {
-        return 'Fartcus'
+        return 'Farticus'
     } else if (lastLetter === 'h') {
         return 'Bach'
     } else if (lastLetter === 'i') {
