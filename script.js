@@ -178,3 +178,18 @@ function capitalize(input) {
 function updateRatingValue(value) {
     document.getElementById('ratingValue').textContent = value;
 }
+// Update the rating value
+function updateRatingValue(value) {
+    document.getElementById('ratingValue').textContent = value;
+}
+
+// Handle the "Send Feedback" button click
+function sendFeedback() {
+    // Get the current rating value from the slider
+    const rating = document.getElementById('nameRating').value;
+
+    // Show an alert with the feedback rating
+    alert(`Thank you for your feedback! You rated the name: ${rating}/10`);
+
+    
+}
