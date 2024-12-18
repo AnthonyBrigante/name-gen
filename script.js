@@ -80,66 +80,69 @@ function genMiddleName(roadType, favoriteColor) {
 //last name
 
 function genLastName(lastName) {
-    const lastLetter = lastName.charAt(lastName.length - 1)
-    if (lastLetter === 'a') {
-        return 'Stormmaker'
-    } else if (lastLetter === 'b') {
-        return 'Von Evil'
-    }
-    else if (lastLetter === 'c') {
-        return 'Dickerson'
-    } else if (lastLetter === 'd') {
-        return 'Johnson'
-    } else if (lastLetter === 'e') {
-        return 'Battlemaster'
-    } else if (lastLetter === 'f') {
-        return 'Turducken'
-    } else if (lastLetter === 'g') {
-        return 'Farticus'
-    } else if (lastLetter === 'h') {
-        return 'Bach'
-    } else if (lastLetter === 'i') {
-        return 'Murderson'
-    } else if (lastLetter === 'j') {
-        return 'Mcbabyhands'
-    } else if (lastLetter === 'k') {
-        return 'Lastname'
-    } else if (lastLetter === 'l') {
-        return 'Tickler'
-    } else if (lastLetter === 'm') {
-        return 'Frogface'
-    } else if (lastLetter === 'n') {
-        return 'Stickybottom'
-    } else if (lastLetter === 'o') {
-        return 'Dragon'
-    } else if (lastLetter === 'p') {
-        return 'Hashyellows'
-    } else if (lastLetter === 'q') {
-        return 'Apartmentbuilding'
-    } else if (lastLetter === 'r') {
-        return 'Shmucker'
-    } else if (lastLetter === 's') {
-        return 'The creator'
-    } else if (lastLetter === 't') {
-        return 'Son of Superman'
-    } else if (lastLetter === 'u') {
-        return 'Jonkler'
-    } else if (lastLetter === 'v') {
-        return 'Skibidi Sigma'
-    } else if (lastLetter === 'w') {
-        return 'Imavillain'
-    } else if (lastLetter === 'x') {
-        return 'nobodyhasxfortheirlastname'
-    } else if (lastLetter === 'y') {
-        return 'Dumbbrain'
-    } else if (lastLetter === 'z') {
-        return 'Feinshyt'
+    const lastLetter = lastName.charAt(lastName.length - 1);
+    
+    switch(lastLetter) {
+        case 'a':
+            return 'Stormmaker';
+        case 'b':
+            return 'Von Evil';
+        case 'c':
+            return 'Dickerson';
+        case 'd':
+            return 'Johnson';
+        case 'e':
+            return 'Battlemaster';
+        case 'f':
+            return 'Turducken';
+        case 'g':
+            return 'Farticus';
+        case 'h':
+            return 'Bach';
+        case 'i':
+            return 'Murderson';
+        case 'j':
+            return 'Mcbabyhands';
+        case 'k':
+            return 'Lastname';
+        case 'l':
+            return 'Tickler';
+        case 'm':
+            return 'Frogface';
+        case 'n':
+            return 'Stickybottom';
+        case 'o':
+            return 'Dragon';
+        case 'p':
+            return 'Hashyellows';
+        case 'q':
+            return 'Apartmentbuilding';
+        case 'r':
+            return 'Shmucker';
+        case 's':
+            return 'The creator';
+        case 't':
+            return 'Son of Superman';
+        case 'u':
+            return 'Jonkler';
+        case 'v':
+            return 'Skibidi Sigma';
+        case 'w':
+            return 'Imavillain';
+        case 'x':
+            return 'nobodyhasxfortheirlastname';
+        case 'y':
+            return 'Dumbbrain';
+        case 'z':
+            return 'Feinshyt';
+        default:
+            return 'make the end of your lastname a letter pal';
     }
 }
 
 //gen Suffix
 function genSuffix(favoriteAnimal) {
-    return `,of the ${favoriteAnimal} League.`
+    return `of the ${favoriteAnimal} League.`
 }
 
 //master name building function
@@ -171,4 +174,7 @@ function genFullName() {
 //capitalize
 function capitalize(input) {
     return input.charAt(0).toUpperCase() + input.slice(1).toLowerCase()
+}
+function updateRatingValue(value) {
+    document.getElementById('ratingValue').textContent = value;
 }

@@ -109,3 +109,92 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Ensure inputs in the same row take equal space */
+.row .col-6 {
+    padding-right: 15px; /* Optional: to add spacing between columns */
+    padding-left: 15px; /* Optional: to add spacing between columns */
+}
+
+/* Ensure the layout is responsive */
+@media screen and (max-width: 600px) {
+    .col-6 {
+        width: 100% !important; /* Stack the columns on smaller screens */
+    }
+}
+.result {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #FFD700;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the result */
+.result:hover {
+    background-color: #FF6347; /* Tomato */
+    color: #4169e1; /* Change text color */
+    transform: scale(1.05); /* Slightly enlarge the name */
+    box-shadow: 0 0 15px #FFD700; /* Enhance the glow effect */
+}
+/* Slider container */
+.rating-container {
+    text-align: center;
+    padding: 20px; /* Increased padding to give more space */
+    background-color: #444;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px #FFD700;
+    margin-bottom: 40px; /* Added margin-bottom to avoid overlap with footer */
+}
+
+/* Style for the slider itself */
+.form-range {
+    width: 100%;
+    height: 20px; /* Increase the height of the slider */
+    background: linear-gradient(to right, #FF6347, #FFD700); /* Gradient background for the slider */
+    border-radius: 10px; /* Round the edges of the slider */
+    margin: 0;
+}
+
+/* Style for the slider thumb (the handle the user drags) */
+#nameRating {
+    background: #FFD700;
+    border: none;
+    height: 20px; /* Increase height of thumb */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px #FF6347; /* Glow effect around the thumb */
+}
+
+/* Style for the thumb in webkit browsers (Chrome, Safari) */
+#nameRating::-webkit-slider-thumb {
+    background: #FF6347; /* Thumb color */
+    border-radius: 50%;
+    border: 2px solid #FFD700; /* Gold border around the thumb */
+    width: 25px; /* Increase thumb size */
+    height: 25px; /* Increase thumb size */
+    cursor: pointer;
+}
+
+/* Style for the thumb in Firefox */
+#nameRating::-moz-range-thumb {
+    background: #FF6347; /* Thumb color */
+    border-radius: 50%;
+    border: 2px solid #FFD700; /* Gold border around the thumb */
+    width: 25px; /* Increase thumb size */
+    height: 25px; /* Increase thumb size */
+    cursor: pointer;
+}
+
+/* Adjust the label showing the current rating value */
+#ratingValue {
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-top: 10px;
+}

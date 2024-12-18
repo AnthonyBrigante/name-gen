@@ -74,7 +74,20 @@
 
                 </div>
             </div>
-
+<!-- Rating Slider -->
+<div class="rating-container mt-4">
+    <label for="nameRating" class="form-label">Rate Your Name:</label>
+    <div id="ratingValue" class="mb-2" style="font-size: 1.5rem; font-weight: bold;">5</div>
+    <input 
+        type="range" 
+        class="form-range" 
+        id="nameRating" 
+        min="1" 
+        max="10" 
+        value="5" 
+        step="1" 
+        oninput="updateRatingValue(this.value)" />
+</div>
         </main>
         <footer>
             <!-- place footer here -->
