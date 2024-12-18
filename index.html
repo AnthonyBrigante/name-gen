@@ -1,13 +1,20 @@
-<!doctype html>
 <html lang="en">
     <head>
         <title>Name-Generator</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
         <!-- Bootstrap CSS v5.2.1 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -17,35 +24,35 @@
         </header>
         <main>
             <div class="container">
-                <!-- Intrustuctions -->
+                <!--Intrustuctions-->
                 <div class="text-center mb-4 mt-5">
                     <h1>Superhero Name Generator</h1>
                     <p>Fill out the form below to generate your Superhero name!</p>
                 </div>
                 <hr>
-                <!-- Form Section -->
+                <!--Form Section-->
                 <form id="fantasyForm" class="mb-4">
-                    <!-- Get First Name -->
+                    <!--Get First Name-->
                     <div class="mb-3">
                         <label for="firstName" class="form-label">First Name</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
                     </div>
-                    <!-- Get Last Name -->
+                    <!--Get Last Name-->
                     <div class="mb-3">
                         <label for="lastName" class="form-label">Last Name</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
                     </div>
-                    <!-- Get Favorite Color -->
+                    <!--Get Favorite Color-->
                     <div class="mb-3">
                         <label for="favoriteColor" class="form-label">Favorite Color</label>
                         <input type="text" class="form-control" id="favoriteColor" placeholder="Enter your favorite color">
                     </div>
-                    <!-- Get Favorite Animal -->
+                    <!--Get Favorite Animal-->
                     <div class="mb-3">
                         <label for="favoriteAnimal" class="form-label">Favorite Animal</label>
                         <input type="text" class="form-control" id="favoriteAnimal" placeholder="Enter your favorite animal">
                     </div>
-                    <!-- Get Road Type -->
+                    <!--Get roadType-->
                     <div class="mb-3">
                         <label for="roadType" class="form-label">Choose Road Type</label>
                         <select id="roadType" class="form-select">
@@ -58,29 +65,27 @@
                             <option value="Other">Other</option>
                         </select>
                     </div>
-                    <!-- Submit Button -->
+                    <!--Submit Button-->
                     <div type="submit" class="btn w-100 rounded" onclick="genFullName()" id="button5">Generate Name</div>
                 </form>
-                <!-- Generate Name Output -->
-                <div class="result" id="result"></div>
+                <!--Generate Name Output-->
+                <div class="result" id="result">
 
-                <!-- Rating Slider Section -->
-                <div class="rating-container mt-4">
-                    <label for="nameRating" class="form-label">Rate Your Name:</label>
-                    <div id="ratingValue" class="mb-2" style="font-size: 1.5rem; font-weight: bold;">5</div>
-                    <input type="range" class="form-range" id="nameRating" min="1" max="10" value="5" step="1" oninput="updateRatingValue(this.value)" />
-                    
-                    <!-- Send Feedback Button -->
-                    <button class="btn btn-warning mt-3" id="sendFeedbackBtn" onclick="sendFeedback()">Send Feedback</button>
                 </div>
             </div>
+<!-- Rating Slider -->
+<div class="rating-container mt-4">
+    <label for="nameRating" class="form-label">Rate Your Name:</label>
+    <div id="ratingValue" class="mb-2" style="font-size: 1.5rem; font-weight: bold;">5</div>
+    <input 
+        type="range" 
+        class="form-range" 
+        id="nameRating" 
+        min="1" 
+        max="10" 
+        value="5" 
+        step="1" 
+        oninput="updateRatingValue(this.value)" />
+</div>
         </main>
         <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    </body>
-</html>

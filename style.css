@@ -1,6 +1,5 @@
 /* General Styles */
 body {
-    background: linear-gradient(135deg, #ff007f, #ff6600, #3399ff); /* Gradient from pink to orange to blue */
     font-family: 'Comic Sans MS', 'Arial', sans-serif;
     color: #fff;
     margin: 0;
@@ -13,7 +12,7 @@ body {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background to contrast */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -104,4 +103,4 @@ input[type="text"]:focus, select:focus {
     background: #FFD700;
     border: none;
     height: 10px;
-    border
+}
